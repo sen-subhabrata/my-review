@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
+    <h1>Random Quote</h1>
+    <p id="quote" style="font-size: 1.5em; margin-top: 20px;">Loading...</p>
+
+    <script>
+        const quotes = [
+            "Be yourself; everyone else is already taken. – Oscar Wilde",
+            "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. – Albert Einstein",
+            "So many books, so little time. – Frank Zappa",
+            "In three words I can sum up everything I've learned about life: it goes on. – Robert Frost"
+        ];
+
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById('quote').innerText = quotes[randomIndex];
+    </script>
+</body>
+</html>
